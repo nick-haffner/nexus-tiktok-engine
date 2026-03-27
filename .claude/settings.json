@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth:*)",
+      "Bash(git credential:*)",
+      "Bash(mv \"Post Slides\" \"final-slides\")",
+      "Bash(mv \"raw images\" \"raw-images\")",
+      "Bash(mv \"austin slide 1.jpg\" \"slide-1-hook.jpg\")",
+      "Bash(mv \"Franklins BBQ.webp\" \"slide-2-bbq-tourist.webp\")",
+      "Bash(mv \"InterStellar BBQ.jpg\" \"slide-2-bbq-local.jpg\")",
+      "Bash(mv \"dirty 6th.webp\" \"slide-3-nightlife-tourist.webp\")",
+      "Bash(mv \"east 6th.jpg\" \"slide-3-nightlife-local.jpg\")"
+    ]
+  }
+}

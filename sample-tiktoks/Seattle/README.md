@@ -1,0 +1,4 @@
+- **Views:** ~90k
+- **Framework:** Local vs Tourist
+- **Angle:** Broad city guide
+- **Format:** Split (Tourist and Local on separate slides)
