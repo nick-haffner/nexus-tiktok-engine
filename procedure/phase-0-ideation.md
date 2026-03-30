@@ -16,7 +16,7 @@ Before presenting to the manager for approval, verify:
 
 ## Step 0.1 — Ideation & Concept Pitches
 
-Read [frameworks.md](frameworks.md) for the current catalog of frameworks, angles, and formats.
+Read [frameworks.md](frameworks.md) for the current catalog of frameworks, angles, and formats. Check `content-bank/ideas.md` for pre-pitched concepts the manager has stored, and `content-bank/cities/` for any stored recommendations that could seed a new carousel.
 
 Present the manager with **4-5 concept pitches.** Each pitch should combine:
 

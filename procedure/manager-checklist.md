@@ -35,10 +35,16 @@ This is a quick-reference compilation of every action the manager takes during t
 - [ ] **Download final images** once approved.
 - [ ] **Save final slides** to the carousel's `final-slides/` directory.
 
+## Phase 4 — Title, Caption & Hashtags (in ChatGPT)
+
+- [ ] **Open ChatGPT.** Paste the prompt Claude generated at the end of Phase 3.
+- [ ] **Review the output.** ChatGPT generates a single recommendation for title, caption, and hashtags. Revise in ChatGPT if needed.
+- [ ] **Save to `caption.md`** in the carousel directory.
+
 ## Posting
 
-- [ ] **Send images to mobile device.**
 - [ ] **Upload to TikTok** as a carousel.
-- [ ] **Apply trending audio** and write caption.
+- [ ] **Add title, caption, and hashtags** from `caption.md`.
+- [ ] **Review sound.** TikTok will suggest one — check the "Popular" section for trending sounds. Always post with a sound.
 - [ ] **Post.**
 - [ ] **Update README.md** in the carousel directory with post date, view counts, and notes.

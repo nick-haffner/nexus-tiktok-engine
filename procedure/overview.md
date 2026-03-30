@@ -12,6 +12,7 @@ This is the production pipeline for Nexus TikTok carousels. Claude orchestrates 
 | Phase 1 (Copywriting) | **Claude** | Writes and refines all slide text. |
 | Phase 2 (Visual Sourcing) | **ChatGPT** (or Perplexity) | Manager pastes Claude-generated prompt. AI sources real photos via web search. |
 | Phase 3 (Assembly) | **Gemini** (Nano Banana 2) | Manager pastes Claude-generated prompt. AI composites text onto images. |
+| Phase 4 (Title, Caption & Hashtags) | **ChatGPT** | Manager pastes Claude-generated prompt. AI generates title, caption with emojis, and hashtags. |
 
 ## Ultimate Acceptance Criteria (The Final Product)
 

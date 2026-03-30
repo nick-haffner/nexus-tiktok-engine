@@ -9,7 +9,12 @@
       "Bash(mv \"Franklins BBQ.webp\" \"slide-2-bbq-tourist.webp\")",
       "Bash(mv \"InterStellar BBQ.jpg\" \"slide-2-bbq-local.jpg\")",
       "Bash(mv \"dirty 6th.webp\" \"slide-3-nightlife-tourist.webp\")",
-      "Bash(mv \"east 6th.jpg\" \"slide-3-nightlife-local.jpg\")"
+      "Bash(mv \"east 6th.jpg\" \"slide-3-nightlife-local.jpg\")",
+      "WebSearch",
+      "Bash(wmic path:*)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\nickh\\Repos\\nexus-tiktok-engine\\content-bank"
     ]
   }
 }

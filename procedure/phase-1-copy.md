@@ -92,3 +92,7 @@ Once the manager approves, do the following:
 > **MANAGER ACTION:** Copy the ChatGPT prompt. Open ChatGPT, paste it, review image options, download selected images, rename them sequentially, save to `raw-images/`. Return and confirm: **"Images Selected and Downloaded."**
 
 Do not proceed to Phase 3 preparation until the manager confirms.
+
+## Saving Unused Content
+
+After the manager approves, save any unused recommendations, alternate pairings, or ideas from this session to `content-bank/cities/[city].md`. If the file doesn't exist, create it. This ensures nothing from the manager's input is lost — it can fuel future carousels for the same city.

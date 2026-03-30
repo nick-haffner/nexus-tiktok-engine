@@ -55,11 +55,16 @@ When the manager is satisfied with the rendered images:
 >
 > 1. Download the final images from Gemini.
 > 2. Save them to the carousel's `final-slides/` directory (e.g., `resulting-tiktoks/[City]_[Date]/final-slides/`).
-> 3. Send the images to your mobile device.
-> 4. Upload to TikTok as a carousel, apply trending audio, and post.
 
-Tell the manager: *"Procedure complete. Once posted, update the carousel's README.md with the post date and check back to add view counts and performance notes."*
+## Phase 4 Handoff
 
----
+Once images are saved, generate the ChatGPT prompt for Phase 4 (title, caption, and hashtags). The prompt should include:
 
-**Procedure Complete.** The files are now ready for manual upload to TikTok (where trending audio and captions will be applied).
+- The full approved slide text from `copy.md`.
+- The city and framework context.
+- Any meta-tips or bonus advice that didn't fit on the slides — these are ideal caption content.
+- Instructions for ChatGPT to generate a single best recommendation with title, emoji-rich caption (2-3+ sentences), and 5-10 hashtags.
+
+Tell the manager: *"Images are done and saved. Here is the prompt to paste into ChatGPT to generate your title, caption, and hashtags. Review the output, revise if needed, and save the result to `caption.md` in the carousel directory. Then proceed to posting."*
+
+> **MANAGER ACTION:** Copy the ChatGPT prompt. Open ChatGPT, paste it, review output, save to `caption.md`. Proceed to posting per Phase 4.

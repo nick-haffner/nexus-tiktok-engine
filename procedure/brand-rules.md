@@ -37,8 +37,8 @@ There is no hard word count. The constraint is **visual legibility at render tim
 
 ### Layout & Safe Zones
 
-- **Aspect Ratio:** 9:16 vertical, ready for direct TikTok upload.
-- **Safe Zones:** No text in the bottom 20% or the right-hand edge (TikTok UI overlay areas).
+- **Aspect Ratio:** 4:5 vertical (1080x1350px) for carousel posts. TikTok displays the caption below the image in carousels, so 4:5 prevents caption/UI overlap. (Use 9:16 only for full-screen video posts.)
+- **Safe Zones:** Keep important text in the center 60-70% of the image. Avoid the top 150px (status bar) and the right-hand edge (TikTok UI buttons).
 - **Anti-Jumping:** Keep text placement as consistent as possible across all slides (exact X/Y coordinates) to prevent visual jumping when swiping.
 
 ### Branding Elements
@@ -53,3 +53,4 @@ There is no hard word count. The constraint is **visual legibility at render tim
 - For contrast frameworks (Local vs Tourist, Overrated vs Underrated): Source images that visually reinforce the contrast — crowded/chaotic for the trap, inviting/authentic for the local pick.
 - For recommendation frameworks (Worth It): Source images that make each spot look appealing and authentic.
 - Prioritize user-generated style photos from Google Maps/Yelp over polished stock.
+- **No full-coverage watermarks.** Reject any image with a stock photo watermark that covers the whole image. Images with small watermarks that can be cropped out in a 9:16 crop are acceptable.

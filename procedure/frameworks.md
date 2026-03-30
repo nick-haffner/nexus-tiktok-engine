@@ -13,6 +13,7 @@ A framework defines the core contrast or structure of the carousel.
 | **Local vs Tourist** | Contrasts tourist traps with local-approved alternatives. High-contrast, opinionated. | Seattle, Dallas, Austin |
 | **Worth It** | Positive recommendations only — no traps. Validates places that are popular for good reason. | San Francisco |
 | **Overrated vs Underrated** | Similar to Local vs Tourist but broader — doesn't require the location to be a "tourist trap," just overhyped. | (unused — available) |
+| **The 24-Hour Test** | "You have 24 hours in [City]." Each slide is a time block (Morning, Afternoon, Evening, Dinner, Late Night) with a "waste it" and a "nail it" choice. Adds urgency and FOMO — the time pressure makes every rec feel higher-stakes. Best paired with split format. | Los Angeles |
 
 ## Angles
 
