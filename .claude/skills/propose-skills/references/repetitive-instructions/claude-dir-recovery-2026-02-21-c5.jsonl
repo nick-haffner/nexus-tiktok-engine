@@ -1,0 +1,1 @@
+{"session_id": "claude-dir-recovery-2026-02-21-c5", "timestamp": "2026-02-21T09:00:00Z", "project": "nexusmvp", "instructions": ["When reconstructing files from compaction summaries, preserve more-recent on-disk content rather than overwriting with older summary content", "Fix recovery table counts by counting rows, not arithmetic on previous counts"]}

@@ -1,0 +1,696 @@
+{
+  "report_type": "level_5_conversion_funnel",
+  "generated_at": "2026-04-03T19:36:59.005592+00:00",
+  "analysis_period": "all-time",
+  "caption_length": {
+    "dimension": "caption_length_words",
+    "groups": [
+      {
+        "value": "short (<50)",
+        "post_count": 33,
+        "confidence": "high",
+        "mean_views": 7656.15,
+        "median_views": 323,
+        "mean_engagement_rate": 5.26,
+        "mean_save_rate": 0.8,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 4.84,
+        "mean_profile_visits": null,
+        "total_views": 252653,
+        "trajectory": "declining",
+        "last_used": "2026-03-23",
+        "notable": "highest mean views",
+        "mean_comment_rate": 0.34
+      },
+      {
+        "value": "medium (50-150)",
+        "post_count": 9,
+        "confidence": "moderate",
+        "mean_views": 4523.56,
+        "median_views": 778,
+        "mean_engagement_rate": 2.53,
+        "mean_save_rate": 0.46,
+        "mean_follower_conversion": 0.22,
+        "mean_watched_full_percent": 15.53,
+        "mean_profile_visits": null,
+        "total_views": 40712,
+        "trajectory": "improving",
+        "last_used": "2026-03-25",
+        "notable": null,
+        "mean_comment_rate": 0.07
+      },
+      {
+        "value": "long (150+)",
+        "post_count": 3,
+        "confidence": "low",
+        "mean_views": 2603.0,
+        "median_views": 865,
+        "mean_engagement_rate": 2.62,
+        "mean_save_rate": 0.71,
+        "mean_follower_conversion": null,
+        "mean_watched_full_percent": null,
+        "mean_profile_visits": null,
+        "total_views": 7809,
+        "trajectory": "stable",
+        "last_used": "2026-03-31",
+        "notable": "lowest mean views",
+        "mean_comment_rate": 0.15
+      }
+    ],
+    "excluded_count": 0,
+    "optimal_length_signal": {
+      "bucket": "short (<50)",
+      "mean_comment_rate": 0.34,
+      "confidence": "high"
+    }
+  },
+  "hashtag_strategy": {
+    "dimension": "hashtag_count",
+    "groups": [
+      {
+        "value": "heavy (6+)",
+        "post_count": 20,
+        "confidence": "high",
+        "mean_views": 9656.25,
+        "median_views": 369.0,
+        "mean_engagement_rate": 4.9,
+        "mean_save_rate": 0.7,
+        "mean_follower_conversion": 0.1,
+        "mean_watched_full_percent": 7.05,
+        "mean_profile_visits": null,
+        "total_views": 193125,
+        "trajectory": "improving",
+        "last_used": "2026-03-25",
+        "notable": "highest mean views"
+      },
+      {
+        "value": "standard (3-5)",
+        "post_count": 24,
+        "confidence": "high",
+        "mean_views": 4494.42,
+        "median_views": 706.0,
+        "mean_engagement_rate": 4.37,
+        "mean_save_rate": 0.76,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 7.55,
+        "mean_profile_visits": null,
+        "total_views": 107866,
+        "trajectory": "declining",
+        "last_used": "2026-03-31",
+        "notable": "highest save rate"
+      },
+      {
+        "value": "minimal (0-2)",
+        "post_count": 1,
+        "confidence": "low",
+        "mean_views": 183.0,
+        "median_views": 183,
+        "mean_engagement_rate": 1.64,
+        "mean_save_rate": 0.55,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 0.0,
+        "mean_profile_visits": null,
+        "total_views": 183,
+        "trajectory": null,
+        "last_used": "2026-03-23",
+        "notable": "lowest mean views"
+      }
+    ],
+    "excluded_count": 0,
+    "optimal_hashtag_signal": {
+      "range": "heavy (6+)",
+      "mean_views": 9656.25,
+      "confidence": "high"
+    }
+  },
+  "cta_analysis": {
+    "cta_presence": {
+      "with_cta": {
+        "count": 16,
+        "mean_engagement_rate": 3.4,
+        "mean_save_rate": 1.4,
+        "mean_follower_conversion": 0.0
+      },
+      "without_cta": {
+        "count": 29,
+        "mean_engagement_rate": 5.17,
+        "mean_save_rate": 0.36,
+        "mean_follower_conversion": 0.07
+      }
+    },
+    "cta_type_comparison": [
+      {
+        "cta_type": "engage",
+        "count": 10,
+        "mean_engagement_rate": 2.99,
+        "mean_save_rate": 1.38,
+        "mean_follower_conversion": 0.0
+      },
+      {
+        "cta_type": "follow",
+        "count": 2,
+        "mean_engagement_rate": 5.19,
+        "mean_save_rate": 2.37,
+        "mean_follower_conversion": 0.0
+      },
+      {
+        "cta_type": "none",
+        "count": 29,
+        "mean_engagement_rate": 5.17,
+        "mean_save_rate": 0.36,
+        "mean_follower_conversion": 0.07
+      },
+      {
+        "cta_type": "waitlist",
+        "count": 2,
+        "mean_engagement_rate": 2.67,
+        "mean_save_rate": 0.94,
+        "mean_follower_conversion": null
+      },
+      {
+        "cta_type": "website",
+        "count": 2,
+        "mean_engagement_rate": 4.39,
+        "mean_save_rate": 0.99,
+        "mean_follower_conversion": 0.0
+      }
+    ],
+    "product_mention_impact": {
+      "with_mention": {
+        "count": 16,
+        "mean_engagement_rate": 5.0,
+        "mean_save_rate": 0.36,
+        "mean_follower_conversion": 0.0
+      },
+      "without_mention": {
+        "count": 29,
+        "mean_engagement_rate": 4.29,
+        "mean_save_rate": 0.94,
+        "mean_follower_conversion": 0.07
+      }
+    },
+    "finding": "Posts with CTAs have 3.9x higher save rate than posts without."
+  },
+  "content_funnel": {
+    "funnel_stages": [
+      {
+        "stage": "View",
+        "value": 301174,
+        "unit": "count"
+      },
+      {
+        "stage": "Engage",
+        "value": 4.89,
+        "unit": "percent"
+      },
+      {
+        "stage": "Save",
+        "value": 2.86,
+        "unit": "percent"
+      },
+      {
+        "stage": "Follow",
+        "value": 0.21,
+        "unit": "per_1k_views"
+      },
+      {
+        "stage": "Profile Visit",
+        "value": null,
+        "unit": "per_1k_views"
+      }
+    ],
+    "stage_dropoffs": [
+      {
+        "from": "Engage",
+        "to": "Save",
+        "ratio": 0.585
+      },
+      {
+        "from": "Save",
+        "to": "Follow",
+        "ratio": 0.007
+      }
+    ],
+    "funnel_bottleneck": "Largest dropoff: Save -> Follow (ratio: 0.007)",
+    "funnel_by_content_type": {
+      "carousel": {
+        "posts": 27,
+        "engagement_rate": 4.87,
+        "save_rate": 2.91,
+        "follower_conversion": 0.21
+      },
+      "video": {
+        "posts": 18,
+        "engagement_rate": 5.78,
+        "save_rate": 0.27,
+        "follower_conversion": null
+      }
+    }
+  },
+  "cta_timeline": {
+    "timeline": [
+      {
+        "posted_date": "2025-09-16",
+        "slug": "7550844747074587935",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-09-17",
+        "slug": "rome-2025-09-17",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-09-18",
+        "slug": "7551546735047331102",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-09-19",
+        "slug": "dallas-2025-09-19",
+        "cta_type": "none",
+        "save_rate": 0.65,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-10-02",
+        "slug": "7556764158109306142",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-10-03",
+        "slug": "7557146206502276383",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-10-08",
+        "slug": "7559015757552553246",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-11-20",
+        "slug": "7574983201312001310",
+        "cta_type": "none",
+        "save_rate": 1.46,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-11-21",
+        "slug": "seattle-2025-11-21",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-11-25",
+        "slug": "7576799139019771167",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-11-26",
+        "slug": "7577253960340229407",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-11-27",
+        "slug": "7577595829893074206",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-11-29",
+        "slug": "7578211335654100254",
+        "cta_type": "website",
+        "save_rate": 1.99,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-12-02",
+        "slug": "los-angeles-2025-12-02",
+        "cta_type": "none",
+        "save_rate": 0.12,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-12-04",
+        "slug": "7580170140919106846",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-12-07",
+        "slug": "7581282305587629343",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-12-09",
+        "slug": "phoenix-2025-12-09",
+        "cta_type": "engage",
+        "save_rate": 3.02,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-12-18",
+        "slug": "phoenix-2025-12-18",
+        "cta_type": "engage",
+        "save_rate": 1.69,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-12-24",
+        "slug": "7587578323488738590",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2025-12-26",
+        "slug": "seattle-2025-12-26",
+        "cta_type": "follow",
+        "save_rate": 4.48,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-01-03",
+        "slug": "seattle-2026-01-03",
+        "cta_type": "none",
+        "save_rate": 1.08,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-01-05",
+        "slug": "7592043053255331102",
+        "cta_type": "website",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-01-05",
+        "slug": "chicago-2026-01-05",
+        "cta_type": "none",
+        "save_rate": 0.45,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-01-07",
+        "slug": "chicago-2026-01-07",
+        "cta_type": "none",
+        "save_rate": 0.55,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-01-11",
+        "slug": "chicago-2026-01-11",
+        "cta_type": "none",
+        "save_rate": 0.23,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-01-18",
+        "slug": "dallas-2026-01-18",
+        "cta_type": "none",
+        "save_rate": 1.21,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-01-21",
+        "slug": "dallas-2026-01-21",
+        "cta_type": "engage",
+        "save_rate": 2.42,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-01-22",
+        "slug": "tri-cities-2026-01-22",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-01-27",
+        "slug": "north-bend-2026-01-27",
+        "cta_type": "engage",
+        "save_rate": 0.62,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-01-29",
+        "slug": "salt-lake-city-2026-01-29",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-02-03",
+        "slug": "west-coast-2026-02-03-4175",
+        "cta_type": "engage",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-02-03",
+        "slug": "west-coast-2026-02-03",
+        "cta_type": "engage",
+        "save_rate": 0.39,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-02-12",
+        "slug": "7606004874374810911",
+        "cta_type": "engage",
+        "save_rate": 1.96,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-02-12",
+        "slug": "seattle-2026-02-12",
+        "cta_type": "none",
+        "save_rate": 0.54,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-02-21",
+        "slug": "denali-2026-02-21",
+        "cta_type": "none",
+        "save_rate": 0.0,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-03-16",
+        "slug": "dallas-2026-03-16",
+        "cta_type": "engage",
+        "save_rate": 2.77,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-03-17",
+        "slug": "7618362011432406302",
+        "cta_type": "engage",
+        "save_rate": 0.48,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-03-18",
+        "slug": "dallas-2026-03-18",
+        "cta_type": "none",
+        "save_rate": 1.46,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-03-20",
+        "slug": "los-angeles-2026-03-20",
+        "cta_type": "none",
+        "save_rate": 0.53,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-03-23",
+        "slug": "dallas-2026-03-23",
+        "cta_type": "none",
+        "save_rate": 0.55,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-03-24",
+        "slug": "salt-lake-city-2026-03-24",
+        "cta_type": "engage",
+        "save_rate": 0.4,
+        "follower_conversion": 0.0
+      },
+      {
+        "posted_date": "2026-03-25",
+        "slug": "austin-2026-03-25",
+        "cta_type": "none",
+        "save_rate": 1.64,
+        "follower_conversion": 2.0
+      },
+      {
+        "posted_date": "2026-03-27",
+        "slug": "los-angeles-2026-03-27",
+        "cta_type": "follow",
+        "save_rate": 0.25,
+        "follower_conversion": null
+      },
+      {
+        "posted_date": "2026-03-30",
+        "slug": "nashville-2026-03-30",
+        "cta_type": "waitlist",
+        "save_rate": 1.2,
+        "follower_conversion": null
+      },
+      {
+        "posted_date": "2026-03-31",
+        "slug": "los-angeles-2026-03-31",
+        "cta_type": "waitlist",
+        "save_rate": 0.69,
+        "follower_conversion": null
+      }
+    ],
+    "phase_comparison": {
+      "first_half_cta_pct": 22.7,
+      "second_half_cta_pct": 47.8,
+      "first_half_save_rate": 0.66,
+      "second_half_save_rate": 0.8,
+      "shift_detected": true
+    }
+  },
+  "missing_data": {
+    "addressable_gaps": [
+      {
+        "gap": "Competitive context",
+        "affects": "L1, L2, Synthesis",
+        "resolution": "Add competitor tracking via manual research or third-party tools"
+      },
+      {
+        "gap": "Classification metadata",
+        "affects": "L2, L3",
+        "resolution": "Backfill existing posts or capture during generate procedure (38/45 lack framework)"
+      },
+      {
+        "gap": "Content artifacts",
+        "affects": "L2, L3, L5",
+        "resolution": "Automate capture during generate and discover procedures (~37/45 lack copy.md)"
+      },
+      {
+        "gap": "posted_time",
+        "affects": "L4",
+        "resolution": "Add to Phase 2 collect or discover enrichment"
+      },
+      {
+        "gap": "Follower attribution",
+        "affects": "L3",
+        "resolution": "Capture fresh readings going forward to determine if backfill data is artifactual"
+      },
+      {
+        "gap": "Profile visits",
+        "affects": "L5",
+        "resolution": "Expand Phase 2 collect to capture profile_visits per post"
+      },
+      {
+        "gap": "Traffic source breakdown",
+        "affects": "L3",
+        "resolution": "Expand Phase 2 collect (only fyp_percent currently captured)"
+      },
+      {
+        "gap": "CTA heuristic accuracy",
+        "affects": "L5",
+        "resolution": "Populate carousel_details.cta_type and cta_text during generate procedure (currently keyword-matched from description)"
+      },
+      {
+        "gap": "sound_name / sound_type",
+        "affects": "L2",
+        "resolution": "Collect sound_name during enrichment, tag sound_type during production"
+      }
+    ],
+    "structural_gaps": [
+      {
+        "gap": "Creative judgment",
+        "affects": "L2, L3, L5, Synthesis",
+        "description": "Assessing hook appeal, caption authenticity, visual energy. Engine performs structured analysis and surfaces questions for human judgment."
+      }
+    ],
+    "stubbed_columns": [
+      {
+        "table": "posts",
+        "column": "posted_time",
+        "tier": 2,
+        "description": "Posting time of day"
+      },
+      {
+        "table": "posts",
+        "column": "sound_type",
+        "tier": 2,
+        "description": "Sound classification (trending/original/licensed)"
+      },
+      {
+        "table": "readings",
+        "column": "profile_visits",
+        "tier": 3,
+        "description": "Profile visits per post"
+      },
+      {
+        "table": "readings",
+        "column": "search_percent",
+        "tier": 3,
+        "description": "Traffic source: search"
+      },
+      {
+        "table": "readings",
+        "column": "profile_percent",
+        "tier": 3,
+        "description": "Traffic source: profile"
+      },
+      {
+        "table": "readings",
+        "column": "following_percent",
+        "tier": 3,
+        "description": "Traffic source: following"
+      },
+      {
+        "table": "readings",
+        "column": "other_percent",
+        "tier": 3,
+        "description": "Traffic source: other"
+      }
+    ],
+    "nexus_metadata_coverage": {
+      "framework": {
+        "filled": 7,
+        "total": 45,
+        "pct": 16
+      },
+      "slide_layout": {
+        "filled": 4,
+        "total": 45,
+        "pct": 9
+      },
+      "city": {
+        "filled": 29,
+        "total": 45,
+        "pct": 64
+      }
+    },
+    "account_checkpoints": 1,
+    "total_readings": 45,
+    "total_posts": 45
+  }
+}

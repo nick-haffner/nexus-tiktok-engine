@@ -1,0 +1,91 @@
+# UTM Naming Conventions
+# Single source of truth for UTM parameter rules, taxonomy, and allowed values.
+# AI agents and link generators validate against this file.
+
+rules:
+  case: lowercase
+  separator: underscore # no spaces, hyphens, or camelCase
+  max_length: 50 # per parameter value
+  encoding: url_safe # no special characters beyond underscores
+  prefix_campaigns: true # all campaign values must start with a campaign_prefix
+
+taxonomy:
+  utm_source: "Traffic origin — the specific platform or partner name"
+  utm_medium: "Channel category — how the traffic arrives"
+  utm_campaign: "Initiative name — what you're promoting"
+  utm_content: "Creative variant — which specific asset or message"
+  utm_term: "Audience segment — who you're targeting"
+
+allowed_values:
+
+  utm_source:
+    platforms:
+      - instagram
+      - twitter
+      - tiktok
+      - linkedin
+      - facebook
+      - reddit
+      - youtube
+      - threads
+    owned:
+      - email
+      - blog
+      - website
+    referral:
+      - referral_program
+    # Partners use the pattern: partner_{firstname} or partner_{handle}
+    # Example: partner_janesmith, partner_alexk
+    partner_pattern: "partner_{identifier}"
+
+  utm_medium:
+    - organic_social # unpaid posts, stories, reels
+    - paid_social # boosted or ad-spend posts
+    - dm # direct messages on any platform
+    - influencer # partner/creator content
+    - referral # user-to-user sharing
+    - email # newsletters, drip sequences
+    - bio_link # link-in-bio clicks
+    - landing_page # dedicated conversion pages
+    - content # blog, SEO, owned content
+    - paid_search # google ads, bing ads
+
+  utm_campaign:
+    campaign_prefixes:
+      - waitlist # waitlist_launch, waitlist_earlybird
+      - launch # launch_announce, launch_week1
+      - promo # promo_summer, promo_bfcm
+      - partner # partner_push, partner_collab
+      - retention # retention_reactivation
+    # Full value follows: {prefix}_{descriptor}
+    pattern: "{prefix}_{descriptor}"
+
+  utm_content:
+    # Format: {type}_{variant}
+    types:
+      - post # post_announcement, post_testimonial
+      - carousel # carousel_v1, carousel_v2
+      - story # story_cta, story_swipeup
+      - reel # reel_demo, reel_teaser
+      - thread # thread_v1, thread_breakdown
+      - dm # dm_cold, dm_warm, dm_followup
+      - bio # bio_link (default bio click)
+      - email # email_welcome, email_reminder
+      - partner # partner_001, partner_janesmith
+      - share # share_link (referral shares)
+    pattern: "{type}_{variant}"
+
+  utm_term:
+    audiences:
+      - founders
+      - designers
+      - developers
+      - marketers
+      - b2b
+      - b2c
+    temperature:
+      - cold_audience
+      - warm_audience
+      - hot_audience
+    # Custom cohort tags are allowed but must follow {category}_{descriptor} pattern
+    custom_pattern: "{category}_{descriptor}"

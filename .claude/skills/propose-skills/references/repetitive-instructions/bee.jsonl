@@ -1,0 +1,1 @@
+{"session_id": "bee", "timestamp": "2026-03-24T23:45:00Z", "project": "qa-e2e-refactoring", "instructions": ["Do not embark on any task without explicit user permission", "Run tests one at a time, not in parallel — wait for user approval between each", "Use the documented local QA execution process (run-e2e-local.sh) for running tests"]}

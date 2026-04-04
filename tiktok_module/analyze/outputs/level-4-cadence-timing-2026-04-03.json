@@ -1,0 +1,504 @@
+{
+  "report_type": "level_4_cadence_timing",
+  "generated_at": "2026-04-03T19:36:58.887581+00:00",
+  "analysis_period": "all-time",
+  "posting_frequency": {
+    "frequency_periods": [
+      {
+        "window_start": "2025-09-16",
+        "window_end": "2025-09-23",
+        "posts_count": 4,
+        "mean_views": 204.75,
+        "mean_engagement_rate": 10.25,
+        "mean_save_rate": 0.16
+      },
+      {
+        "window_start": "2025-09-30",
+        "window_end": "2025-10-07",
+        "posts_count": 2,
+        "mean_views": 221.0,
+        "mean_engagement_rate": 7.07,
+        "mean_save_rate": 0.0
+      },
+      {
+        "window_start": "2025-10-07",
+        "window_end": "2025-10-14",
+        "posts_count": 1,
+        "mean_views": 282.0,
+        "mean_engagement_rate": 6.38,
+        "mean_save_rate": 0.0
+      },
+      {
+        "window_start": "2025-11-18",
+        "window_end": "2025-11-25",
+        "posts_count": 2,
+        "mean_views": 405.5,
+        "mean_engagement_rate": 3.83,
+        "mean_save_rate": 0.73
+      },
+      {
+        "window_start": "2025-11-25",
+        "window_end": "2025-12-02",
+        "posts_count": 4,
+        "mean_views": 198.0,
+        "mean_engagement_rate": 3.94,
+        "mean_save_rate": 0.5
+      },
+      {
+        "window_start": "2025-12-02",
+        "window_end": "2025-12-09",
+        "posts_count": 3,
+        "mean_views": 453.0,
+        "mean_engagement_rate": 2.05,
+        "mean_save_rate": 0.04
+      },
+      {
+        "window_start": "2025-12-09",
+        "window_end": "2025-12-16",
+        "posts_count": 1,
+        "mean_views": 62918.0,
+        "mean_engagement_rate": 3.99,
+        "mean_save_rate": 3.02
+      },
+      {
+        "window_start": "2025-12-16",
+        "window_end": "2025-12-23",
+        "posts_count": 1,
+        "mean_views": 6335.0,
+        "mean_engagement_rate": 2.12,
+        "mean_save_rate": 1.69
+      },
+      {
+        "window_start": "2025-12-23",
+        "window_end": "2025-12-30",
+        "posts_count": 2,
+        "mean_views": 45697.5,
+        "mean_engagement_rate": 5.42,
+        "mean_save_rate": 2.24
+      },
+      {
+        "window_start": "2025-12-30",
+        "window_end": "2026-01-06",
+        "posts_count": 3,
+        "mean_views": 1908.0,
+        "mean_engagement_rate": 5.09,
+        "mean_save_rate": 0.51
+      },
+      {
+        "window_start": "2026-01-06",
+        "window_end": "2026-01-13",
+        "posts_count": 2,
+        "mean_views": 583.5,
+        "mean_engagement_rate": 6.34,
+        "mean_save_rate": 0.39
+      },
+      {
+        "window_start": "2026-01-13",
+        "window_end": "2026-01-20",
+        "posts_count": 1,
+        "mean_views": 165.0,
+        "mean_engagement_rate": 4.85,
+        "mean_save_rate": 1.21
+      },
+      {
+        "window_start": "2026-01-20",
+        "window_end": "2026-01-27",
+        "posts_count": 2,
+        "mean_views": 27386.0,
+        "mean_engagement_rate": 3.12,
+        "mean_save_rate": 1.21
+      },
+      {
+        "window_start": "2026-01-27",
+        "window_end": "2026-02-03",
+        "posts_count": 2,
+        "mean_views": 1321.0,
+        "mean_engagement_rate": 4.19,
+        "mean_save_rate": 0.31
+      },
+      {
+        "window_start": "2026-02-03",
+        "window_end": "2026-02-10",
+        "posts_count": 2,
+        "mean_views": 389.5,
+        "mean_engagement_rate": 1.8,
+        "mean_save_rate": 0.2
+      },
+      {
+        "window_start": "2026-02-10",
+        "window_end": "2026-02-17",
+        "posts_count": 2,
+        "mean_views": 10454.0,
+        "mean_engagement_rate": 4.25,
+        "mean_save_rate": 1.25
+      },
+      {
+        "window_start": "2026-02-17",
+        "window_end": "2026-02-24",
+        "posts_count": 1,
+        "mean_views": 1507.0,
+        "mean_engagement_rate": 5.77,
+        "mean_save_rate": 0.0
+      },
+      {
+        "window_start": "2026-03-10",
+        "window_end": "2026-03-17",
+        "posts_count": 1,
+        "mean_views": 2783.0,
+        "mean_engagement_rate": 4.85,
+        "mean_save_rate": 2.77
+      },
+      {
+        "window_start": "2026-03-17",
+        "window_end": "2026-03-24",
+        "posts_count": 4,
+        "mean_views": 515.0,
+        "mean_engagement_rate": 3.35,
+        "mean_save_rate": 0.76
+      },
+      {
+        "window_start": "2026-03-24",
+        "window_end": "2026-03-31",
+        "posts_count": 4,
+        "mean_views": 10662.25,
+        "mean_engagement_rate": 2.48,
+        "mean_save_rate": 0.87
+      },
+      {
+        "window_start": "2026-03-31",
+        "window_end": "2026-04-07",
+        "posts_count": 1,
+        "mean_views": 865.0,
+        "mean_engagement_rate": 2.89,
+        "mean_save_rate": 0.69
+      }
+    ],
+    "overall_posts_per_week": 1.6,
+    "frequency_performance_correlation": "negative",
+    "data_citation": "21 weekly periods analyzed, 45 total posts"
+  },
+  "day_of_week": {
+    "dimension": "posted_day_of_week",
+    "groups": [
+      {
+        "value": "Friday",
+        "post_count": 6,
+        "confidence": "moderate",
+        "mean_views": 15564.0,
+        "median_views": 482.5,
+        "mean_engagement_rate": 5.28,
+        "mean_save_rate": 0.98,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 8.06,
+        "mean_profile_visits": null,
+        "total_views": 93384,
+        "trajectory": "improving",
+        "last_used": "2026-03-27",
+        "notable": "highest mean views"
+      },
+      {
+        "value": "Wednesday",
+        "post_count": 8,
+        "confidence": "moderate",
+        "mean_views": 10950.75,
+        "median_views": 484.5,
+        "mean_engagement_rate": 6.62,
+        "mean_save_rate": 0.76,
+        "mean_follower_conversion": 0.25,
+        "mean_watched_full_percent": 9.84,
+        "mean_profile_visits": null,
+        "total_views": 87606,
+        "trajectory": "improving",
+        "last_used": "2026-03-25",
+        "notable": null
+      },
+      {
+        "value": "Tuesday",
+        "post_count": 10,
+        "confidence": "high",
+        "mean_views": 7306.0,
+        "median_views": 821.5,
+        "mean_engagement_rate": 2.84,
+        "mean_save_rate": 0.57,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 9.67,
+        "mean_profile_visits": null,
+        "total_views": 73060,
+        "trajectory": "declining",
+        "last_used": "2026-03-31",
+        "notable": "declining trajectory"
+      },
+      {
+        "value": "Thursday",
+        "post_count": 10,
+        "confidence": "high",
+        "mean_views": 2978.6,
+        "median_views": 353.0,
+        "mean_engagement_rate": 4.46,
+        "mean_save_rate": 0.57,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 4.67,
+        "mean_profile_visits": null,
+        "total_views": 29786,
+        "trajectory": "improving",
+        "last_used": "2026-02-12",
+        "notable": null
+      },
+      {
+        "value": "Saturday",
+        "post_count": 3,
+        "confidence": "low",
+        "mean_views": 2108.67,
+        "median_views": 1507,
+        "mean_engagement_rate": 4.74,
+        "mean_save_rate": 1.02,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 7.37,
+        "mean_profile_visits": null,
+        "total_views": 6326,
+        "trajectory": "stable",
+        "last_used": "2026-02-21",
+        "notable": "highest save rate"
+      },
+      {
+        "value": "Monday",
+        "post_count": 5,
+        "confidence": "moderate",
+        "mean_views": 2043.4,
+        "median_views": 893,
+        "mean_engagement_rate": 4.35,
+        "mean_save_rate": 0.99,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 5.33,
+        "mean_profile_visits": null,
+        "total_views": 10217,
+        "trajectory": "improving",
+        "last_used": "2026-03-30",
+        "notable": null
+      },
+      {
+        "value": "Sunday",
+        "post_count": 3,
+        "confidence": "low",
+        "mean_views": 265.0,
+        "median_views": 188,
+        "mean_engagement_rate": 3.61,
+        "mean_save_rate": 0.48,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 1.17,
+        "mean_profile_visits": null,
+        "total_views": 795,
+        "trajectory": "stable",
+        "last_used": "2026-01-18",
+        "notable": "lowest mean views"
+      }
+    ],
+    "excluded_count": 0
+  },
+  "time_of_day": {
+    "dimension": "time_of_day",
+    "groups": [],
+    "excluded_count": 45,
+    "stubbed": true
+  },
+  "gap_analysis": {
+    "dimension": "days_since_previous_post",
+    "groups": [
+      {
+        "value": "2-3 days",
+        "post_count": 14,
+        "confidence": "high",
+        "mean_views": 15686.14,
+        "median_views": 762.0,
+        "mean_engagement_rate": 3.75,
+        "mean_save_rate": 1.08,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 5.39,
+        "mean_profile_visits": null,
+        "total_views": 219606,
+        "trajectory": "declining",
+        "last_used": "2026-03-30",
+        "notable": "highest mean views"
+      },
+      {
+        "value": "8+ days",
+        "post_count": 7,
+        "confidence": "moderate",
+        "mean_views": 5194.71,
+        "median_views": 2783,
+        "mean_engagement_rate": 4.47,
+        "mean_save_rate": 1.28,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 8.63,
+        "mean_profile_visits": null,
+        "total_views": 36363,
+        "trajectory": "improving",
+        "last_used": "2026-03-16",
+        "notable": "highest save rate"
+      },
+      {
+        "value": "0-1 days",
+        "post_count": 16,
+        "confidence": "high",
+        "mean_views": 2613.25,
+        "median_views": 384.0,
+        "mean_engagement_rate": 5.71,
+        "mean_save_rate": 0.42,
+        "mean_follower_conversion": 0.13,
+        "mean_watched_full_percent": 9.75,
+        "mean_profile_visits": null,
+        "total_views": 41812,
+        "trajectory": "improving",
+        "last_used": "2026-03-31",
+        "notable": null
+      },
+      {
+        "value": "4-7 days",
+        "post_count": 7,
+        "confidence": "moderate",
+        "mean_views": 438.57,
+        "median_views": 207,
+        "mean_engagement_rate": 2.99,
+        "mean_save_rate": 0.29,
+        "mean_follower_conversion": 0.0,
+        "mean_watched_full_percent": 3.8,
+        "mean_profile_visits": null,
+        "total_views": 3070,
+        "trajectory": "improving",
+        "last_used": "2026-02-03",
+        "notable": "lowest mean views"
+      }
+    ],
+    "excluded_count": 1,
+    "optimal_gap_signal": {
+      "bucket": "2-3 days",
+      "mean_views": 15686.14,
+      "confidence": "high"
+    }
+  },
+  "consistency": {
+    "gap_stddev": 7.3,
+    "posting_pattern": "bursty",
+    "consistency_performance_signal": "Consistent posting cadence correlates with higher views."
+  },
+  "missing_data": {
+    "addressable_gaps": [
+      {
+        "gap": "Competitive context",
+        "affects": "L1, L2, Synthesis",
+        "resolution": "Add competitor tracking via manual research or third-party tools"
+      },
+      {
+        "gap": "Classification metadata",
+        "affects": "L2, L3",
+        "resolution": "Backfill existing posts or capture during generate procedure (38/45 lack framework)"
+      },
+      {
+        "gap": "Content artifacts",
+        "affects": "L2, L3, L5",
+        "resolution": "Automate capture during generate and discover procedures (~37/45 lack copy.md)"
+      },
+      {
+        "gap": "posted_time",
+        "affects": "L4",
+        "resolution": "Add to Phase 2 collect or discover enrichment"
+      },
+      {
+        "gap": "Follower attribution",
+        "affects": "L3",
+        "resolution": "Capture fresh readings going forward to determine if backfill data is artifactual"
+      },
+      {
+        "gap": "Profile visits",
+        "affects": "L5",
+        "resolution": "Expand Phase 2 collect to capture profile_visits per post"
+      },
+      {
+        "gap": "Traffic source breakdown",
+        "affects": "L3",
+        "resolution": "Expand Phase 2 collect (only fyp_percent currently captured)"
+      },
+      {
+        "gap": "CTA heuristic accuracy",
+        "affects": "L5",
+        "resolution": "Populate carousel_details.cta_type and cta_text during generate procedure (currently keyword-matched from description)"
+      },
+      {
+        "gap": "sound_name / sound_type",
+        "affects": "L2",
+        "resolution": "Collect sound_name during enrichment, tag sound_type during production"
+      }
+    ],
+    "structural_gaps": [
+      {
+        "gap": "Creative judgment",
+        "affects": "L2, L3, L5, Synthesis",
+        "description": "Assessing hook appeal, caption authenticity, visual energy. Engine performs structured analysis and surfaces questions for human judgment."
+      }
+    ],
+    "stubbed_columns": [
+      {
+        "table": "posts",
+        "column": "posted_time",
+        "tier": 2,
+        "description": "Posting time of day"
+      },
+      {
+        "table": "posts",
+        "column": "sound_type",
+        "tier": 2,
+        "description": "Sound classification (trending/original/licensed)"
+      },
+      {
+        "table": "readings",
+        "column": "profile_visits",
+        "tier": 3,
+        "description": "Profile visits per post"
+      },
+      {
+        "table": "readings",
+        "column": "search_percent",
+        "tier": 3,
+        "description": "Traffic source: search"
+      },
+      {
+        "table": "readings",
+        "column": "profile_percent",
+        "tier": 3,
+        "description": "Traffic source: profile"
+      },
+      {
+        "table": "readings",
+        "column": "following_percent",
+        "tier": 3,
+        "description": "Traffic source: following"
+      },
+      {
+        "table": "readings",
+        "column": "other_percent",
+        "tier": 3,
+        "description": "Traffic source: other"
+      }
+    ],
+    "nexus_metadata_coverage": {
+      "framework": {
+        "filled": 7,
+        "total": 45,
+        "pct": 16
+      },
+      "slide_layout": {
+        "filled": 4,
+        "total": 45,
+        "pct": 9
+      },
+      "city": {
+        "filled": 29,
+        "total": 45,
+        "pct": 64
+      }
+    },
+    "account_checkpoints": 1,
+    "total_readings": 45,
+    "total_posts": 45
+  }
+}

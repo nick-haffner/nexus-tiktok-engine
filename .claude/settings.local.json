@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(done)",
+      "Bash(else echo:*)",
+      "Bash(fi)",
+      "Bash(python3 -c \"import sqlite3; conn = sqlite3.connect\\(''tiktok_module/analytics/analytics.db''\\); print\\([row for row in conn.execute\\(''PRAGMA table_info\\(posts\\)''\\).fetchall\\(\\)]\\)\")",
+      "Bash(sqlite3 tiktok_module/analytics/analytics.db \".schema\")",
+      "Bash(# Try with cp + rm approach since rename is blocked\ncp -r resulting-tiktoks posts && echo \"copied\" || echo \"copy failed\")",
+      "Bash(kill %1)",
+      "Bash(powershell.exe -Command \"Get-Clipboard | Out-File -Encoding utf8 tiktok_module/scripts/temp_urls.json\")",
+      "Bash(taskkill //PID 49056 //F)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //PID 53992 //F)",
+      "Bash(curl:*)",
+      "Bash(taskkill //PID 31776 //F)",
+      "Bash(taskkill //PID 41980 //F)",
+      "Bash(sqlite3:*)",
+      "Bash(python:*)",
+      "Bash(tasklist)",
+      "Bash(python3 -)",
+      "Bash(python3 store/procedures/discover-posts/derive_visual.py)",
+      "Bash(python3 store/procedures/discover-posts/_tmp_derive.py)",
+      "Bash(python3 store/procedures/discover-posts/derive_visual_tmp.py)",
+      "Bash(python3 store/data/analytics/derive_visual.py)",
+      "Bash(where python:*)",
+      "Bash(where py:*)",
+      "Bash(python3 _write_summaries.py)",
+      "Bash(rm _write_summaries.py)",
+      "Bash(/c/Python312/python _write_summaries.py)",
+      "Bash(/c/Python312/python.exe _write_summaries.py)"
+    ]
+  }
+}

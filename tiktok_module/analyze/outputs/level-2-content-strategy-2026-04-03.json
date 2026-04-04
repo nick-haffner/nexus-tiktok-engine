@@ -1,0 +1,893 @@
+{
+  "report_type": "level_2_content_strategy",
+  "generated_at": "2026-04-03T19:36:58.629741+00:00",
+  "analysis_period": "all-time",
+  "dimension_comparisons": [
+    {
+      "dimension": "framework",
+      "groups": [
+        {
+          "value": "local_vs_tourist",
+          "post_count": 4,
+          "confidence": "low",
+          "mean_views": 53672.25,
+          "median_views": 58676.0,
+          "mean_engagement_rate": 4.33,
+          "mean_save_rate": 2.78,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 4.8,
+          "mean_profile_visits": null,
+          "total_views": 214689,
+          "trajectory": "stable",
+          "last_used": "2026-03-30",
+          "notable": "highest mean views"
+        },
+        {
+          "value": "worth_it",
+          "post_count": 2,
+          "confidence": "low",
+          "mean_views": 10702.5,
+          "median_views": 10702.5,
+          "mean_engagement_rate": 3.53,
+          "mean_save_rate": 1.32,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 2.3,
+          "mean_profile_visits": null,
+          "total_views": 21405,
+          "trajectory": null,
+          "last_used": "2026-03-31",
+          "notable": null
+        },
+        {
+          "value": "the_24-hour_test",
+          "post_count": 1,
+          "confidence": "low",
+          "mean_views": 799.0,
+          "median_views": 799,
+          "mean_engagement_rate": 2.5,
+          "mean_save_rate": 0.25,
+          "mean_follower_conversion": null,
+          "mean_watched_full_percent": null,
+          "mean_profile_visits": null,
+          "total_views": 799,
+          "trajectory": null,
+          "last_used": "2026-03-27",
+          "notable": "lowest mean views"
+        }
+      ],
+      "excluded_count": 38
+    },
+    {
+      "dimension": "slide_layout",
+      "groups": [
+        {
+          "value": "split",
+          "post_count": 1,
+          "confidence": "low",
+          "mean_views": 91192.0,
+          "median_views": 91192,
+          "mean_engagement_rate": 7.88,
+          "mean_save_rate": 4.48,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 9.1,
+          "mean_profile_visits": null,
+          "total_views": 91192,
+          "trajectory": null,
+          "last_used": "2025-12-26",
+          "notable": "highest mean views"
+        },
+        {
+          "value": "combined",
+          "post_count": 2,
+          "confidence": "low",
+          "mean_views": 58676.0,
+          "median_views": 58676.0,
+          "mean_engagement_rate": 3.49,
+          "mean_save_rate": 2.72,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 2.65,
+          "mean_profile_visits": null,
+          "total_views": 117352,
+          "trajectory": null,
+          "last_used": "2026-01-21",
+          "notable": null
+        },
+        {
+          "value": "single_point",
+          "post_count": 1,
+          "confidence": "low",
+          "mean_views": 20540.0,
+          "median_views": 20540,
+          "mean_engagement_rate": 4.16,
+          "mean_save_rate": 1.96,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 2.3,
+          "mean_profile_visits": null,
+          "total_views": 20540,
+          "trajectory": null,
+          "last_used": "2026-02-12",
+          "notable": "lowest mean views"
+        }
+      ],
+      "excluded_count": 41
+    },
+    {
+      "dimension": "content_type",
+      "groups": [
+        {
+          "value": "carousel",
+          "post_count": 27,
+          "confidence": "high",
+          "mean_views": 10936.89,
+          "median_views": 865,
+          "mean_engagement_rate": 3.94,
+          "mean_save_rate": 1.04,
+          "mean_follower_conversion": 0.08,
+          "mean_watched_full_percent": 10.27,
+          "mean_profile_visits": null,
+          "total_views": 295296,
+          "trajectory": "declining",
+          "last_used": "2026-03-31",
+          "notable": "highest mean views"
+        },
+        {
+          "value": "video",
+          "post_count": 18,
+          "confidence": "high",
+          "mean_views": 326.56,
+          "median_views": 250.5,
+          "mean_engagement_rate": 5.45,
+          "mean_save_rate": 0.27,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 2.96,
+          "mean_profile_visits": null,
+          "total_views": 5878,
+          "trajectory": "improving",
+          "last_used": "2026-01-29",
+          "notable": "lowest mean views"
+        }
+      ],
+      "excluded_count": 0
+    },
+    {
+      "dimension": "slide_count",
+      "groups": [
+        {
+          "value": "9+",
+          "post_count": 6,
+          "confidence": "moderate",
+          "mean_views": 26511.67,
+          "median_views": 6240.0,
+          "mean_engagement_rate": 3.8,
+          "mean_save_rate": 1.88,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 7.03,
+          "mean_profile_visits": null,
+          "total_views": 159070,
+          "trajectory": "declining",
+          "last_used": "2026-03-30",
+          "notable": "highest mean views"
+        },
+        {
+          "value": "6-8",
+          "post_count": 11,
+          "confidence": "high",
+          "mean_views": 11268.91,
+          "median_views": 868,
+          "mean_engagement_rate": 3.98,
+          "mean_save_rate": 0.8,
+          "mean_follower_conversion": 0.2,
+          "mean_watched_full_percent": 12.65,
+          "mean_profile_visits": null,
+          "total_views": 123958,
+          "trajectory": "stable",
+          "last_used": "2026-03-31",
+          "notable": null
+        },
+        {
+          "value": "1-5",
+          "post_count": 28,
+          "confidence": "high",
+          "mean_views": 648.07,
+          "median_views": 313.0,
+          "mean_engagement_rate": 4.92,
+          "mean_save_rate": 0.46,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 5.18,
+          "mean_profile_visits": null,
+          "total_views": 18146,
+          "trajectory": "declining",
+          "last_used": "2026-03-23",
+          "notable": "lowest mean views"
+        }
+      ],
+      "excluded_count": 0
+    },
+    {
+      "dimension": "city",
+      "groups": [
+        {
+          "value": "Phoenix",
+          "post_count": 2,
+          "confidence": "low",
+          "mean_views": 34626.5,
+          "median_views": 34626.5,
+          "mean_engagement_rate": 3.06,
+          "mean_save_rate": 2.35,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 8.15,
+          "mean_profile_visits": null,
+          "total_views": 69253,
+          "trajectory": null,
+          "last_used": "2025-12-18",
+          "notable": "highest mean views"
+        },
+        {
+          "value": "Austin",
+          "post_count": 1,
+          "confidence": "low",
+          "mean_views": 31000.0,
+          "median_views": 31000,
+          "mean_engagement_rate": 3.85,
+          "mean_save_rate": 1.64,
+          "mean_follower_conversion": 2.0,
+          "mean_watched_full_percent": 33.3,
+          "mean_profile_visits": null,
+          "total_views": 31000,
+          "trajectory": null,
+          "last_used": "2026-03-25",
+          "notable": null
+        },
+        {
+          "value": "Seattle",
+          "post_count": 4,
+          "confidence": "low",
+          "mean_views": 24144.5,
+          "median_views": 2509.0,
+          "mean_engagement_rate": 4.67,
+          "mean_save_rate": 1.53,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 9.97,
+          "mean_profile_visits": null,
+          "total_views": 96578,
+          "trajectory": "improving",
+          "last_used": "2026-02-12",
+          "notable": null
+        },
+        {
+          "value": "Dallas",
+          "post_count": 6,
+          "confidence": "moderate",
+          "mean_views": 9734.5,
+          "median_views": 435.0,
+          "mean_engagement_rate": 4.97,
+          "mean_save_rate": 1.51,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 7.33,
+          "mean_profile_visits": null,
+          "total_views": 58407,
+          "trajectory": "declining",
+          "last_used": "2026-03-23",
+          "notable": "declining trajectory"
+        },
+        {
+          "value": "Nashville",
+          "post_count": 1,
+          "confidence": "low",
+          "mean_views": 6145.0,
+          "median_views": 6145,
+          "mean_engagement_rate": 2.46,
+          "mean_save_rate": 1.2,
+          "mean_follower_conversion": null,
+          "mean_watched_full_percent": null,
+          "mean_profile_visits": null,
+          "total_views": 6145,
+          "trajectory": null,
+          "last_used": "2026-03-30",
+          "notable": null
+        },
+        {
+          "value": "Salt Lake City",
+          "post_count": 2,
+          "confidence": "low",
+          "mean_views": 2788.5,
+          "median_views": 2788.5,
+          "mean_engagement_rate": 3.31,
+          "mean_save_rate": 0.2,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 8.5,
+          "mean_profile_visits": null,
+          "total_views": 5577,
+          "trajectory": null,
+          "last_used": "2026-03-24",
+          "notable": null
+        },
+        {
+          "value": "North Bend",
+          "post_count": 1,
+          "confidence": "low",
+          "mean_views": 1770.0,
+          "median_views": 1770,
+          "mean_engagement_rate": 2.88,
+          "mean_save_rate": 0.62,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 18.9,
+          "mean_profile_visits": null,
+          "total_views": 1770,
+          "trajectory": null,
+          "last_used": "2026-01-27",
+          "notable": null
+        },
+        {
+          "value": "Denali",
+          "post_count": 1,
+          "confidence": "low",
+          "mean_views": 1507.0,
+          "median_views": 1507,
+          "mean_engagement_rate": 5.77,
+          "mean_save_rate": 0.0,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 1.0,
+          "mean_profile_visits": null,
+          "total_views": 1507,
+          "trajectory": null,
+          "last_used": "2026-02-21",
+          "notable": null
+        },
+        {
+          "value": "Los Angeles",
+          "post_count": 4,
+          "confidence": "low",
+          "mean_views": 774.25,
+          "median_views": 832.0,
+          "mean_engagement_rate": 2.13,
+          "mean_save_rate": 0.4,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 15.85,
+          "mean_profile_visits": null,
+          "total_views": 3097,
+          "trajectory": "stable",
+          "last_used": "2026-03-31",
+          "notable": null
+        },
+        {
+          "value": "Chicago",
+          "post_count": 3,
+          "confidence": "low",
+          "mean_views": 686.67,
+          "median_views": 725,
+          "mean_engagement_rate": 7.55,
+          "mean_save_rate": 0.41,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 2.2,
+          "mean_profile_visits": null,
+          "total_views": 2060,
+          "trajectory": "stable",
+          "last_used": "2026-01-11",
+          "notable": null
+        },
+        {
+          "value": "West Coast",
+          "post_count": 2,
+          "confidence": "low",
+          "mean_views": 389.5,
+          "median_views": 389.5,
+          "mean_engagement_rate": 1.8,
+          "mean_save_rate": 0.2,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 10.9,
+          "mean_profile_visits": null,
+          "total_views": 779,
+          "trajectory": null,
+          "last_used": "2026-02-03",
+          "notable": null
+        },
+        {
+          "value": "Tri-Cities",
+          "post_count": 1,
+          "confidence": "low",
+          "mean_views": 338.0,
+          "median_views": 338,
+          "mean_engagement_rate": 3.25,
+          "mean_save_rate": 0.0,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 3.1,
+          "mean_profile_visits": null,
+          "total_views": 338,
+          "trajectory": null,
+          "last_used": "2026-01-22",
+          "notable": null
+        },
+        {
+          "value": "Rome",
+          "post_count": 1,
+          "confidence": "low",
+          "mean_views": 113.0,
+          "median_views": 113,
+          "mean_engagement_rate": 15.93,
+          "mean_save_rate": 0.0,
+          "mean_follower_conversion": 0.0,
+          "mean_watched_full_percent": 12.4,
+          "mean_profile_visits": null,
+          "total_views": 113,
+          "trajectory": null,
+          "last_used": "2025-09-17",
+          "notable": "lowest mean views"
+        }
+      ],
+      "excluded_count": 16
+    },
+    {
+      "dimension": "content_topics",
+      "groups": [],
+      "excluded_count": 45
+    },
+    {
+      "dimension": "sound_type",
+      "groups": [],
+      "excluded_count": 45
+    }
+  ],
+  "content_mix": {
+    "period": "last 10 posts",
+    "dimensions": {
+      "content_type": [
+        {
+          "value": "carousel",
+          "count": 10,
+          "percentage": 100
+        }
+      ],
+      "framework": [
+        {
+          "value": "(unclassified)",
+          "count": 7,
+          "percentage": 70
+        },
+        {
+          "value": "worth_it",
+          "count": 1,
+          "percentage": 10
+        },
+        {
+          "value": "local_vs_tourist",
+          "count": 1,
+          "percentage": 10
+        },
+        {
+          "value": "the_24-hour_test",
+          "count": 1,
+          "percentage": 10
+        }
+      ],
+      "slide_layout": [
+        {
+          "value": "(unclassified)",
+          "count": 10,
+          "percentage": 100
+        }
+      ],
+      "city": [
+        {
+          "value": "Los Angeles",
+          "count": 3,
+          "percentage": 30
+        },
+        {
+          "value": "Dallas",
+          "count": 3,
+          "percentage": 30
+        },
+        {
+          "value": "Nashville",
+          "count": 1,
+          "percentage": 10
+        },
+        {
+          "value": "Austin",
+          "count": 1,
+          "percentage": 10
+        },
+        {
+          "value": "Salt Lake City",
+          "count": 1,
+          "percentage": 10
+        },
+        {
+          "value": "(unclassified)",
+          "count": 1,
+          "percentage": 10
+        }
+      ]
+    }
+  },
+  "correlation_highlights": [
+    {
+      "finding": "carousel x 10 has 9.3x higher save_rate than video x 1",
+      "dimensions": [
+        "content_type",
+        "slide_count"
+      ],
+      "metric": "save_rate",
+      "data_citation": "carousel x 10: 2.5, video x 1: 0.3",
+      "confidence": "high"
+    }
+  ],
+  "classification_gap": {
+    "total_posts": 45,
+    "classified_posts": 7,
+    "unclassified_posts": 38,
+    "field_coverage": {
+      "framework": {
+        "filled": 7,
+        "total": 45,
+        "pct": 16
+      },
+      "slide_layout": {
+        "filled": 4,
+        "total": 45,
+        "pct": 9
+      },
+      "city": {
+        "filled": 29,
+        "total": 45,
+        "pct": 64
+      }
+    },
+    "unclassified_list": [
+      {
+        "slug": "7550844747074587935",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7551546735047331102",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7556764158109306142",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7557146206502276383",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7559015757552553246",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7574983201312001310",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7576799139019771167",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7577253960340229407",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7577595829893074206",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7578211335654100254",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7580170140919106846",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7581282305587629343",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7587578323488738590",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7592043053255331102",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "7618362011432406302",
+        "framework": null,
+        "slide_layout": null,
+        "city": null
+      },
+      {
+        "slug": "austin-2026-03-25",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Austin"
+      },
+      {
+        "slug": "chicago-2026-01-05",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Chicago"
+      },
+      {
+        "slug": "chicago-2026-01-07",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Chicago"
+      },
+      {
+        "slug": "chicago-2026-01-11",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Chicago"
+      },
+      {
+        "slug": "dallas-2025-09-19",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Dallas"
+      },
+      {
+        "slug": "dallas-2026-01-18",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Dallas"
+      },
+      {
+        "slug": "dallas-2026-03-16",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Dallas"
+      },
+      {
+        "slug": "dallas-2026-03-18",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Dallas"
+      },
+      {
+        "slug": "dallas-2026-03-23",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Dallas"
+      },
+      {
+        "slug": "denali-2026-02-21",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Denali"
+      },
+      {
+        "slug": "los-angeles-2025-12-02",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Los Angeles"
+      },
+      {
+        "slug": "los-angeles-2026-03-20",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Los Angeles"
+      },
+      {
+        "slug": "north-bend-2026-01-27",
+        "framework": null,
+        "slide_layout": null,
+        "city": "North Bend"
+      },
+      {
+        "slug": "phoenix-2025-12-18",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Phoenix"
+      },
+      {
+        "slug": "rome-2025-09-17",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Rome"
+      },
+      {
+        "slug": "salt-lake-city-2026-01-29",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Salt Lake City"
+      },
+      {
+        "slug": "salt-lake-city-2026-03-24",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Salt Lake City"
+      },
+      {
+        "slug": "seattle-2025-11-21",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Seattle"
+      },
+      {
+        "slug": "seattle-2026-01-03",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Seattle"
+      },
+      {
+        "slug": "seattle-2026-02-12",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Seattle"
+      },
+      {
+        "slug": "tri-cities-2026-01-22",
+        "framework": null,
+        "slide_layout": null,
+        "city": "Tri-Cities"
+      },
+      {
+        "slug": "west-coast-2026-02-03",
+        "framework": null,
+        "slide_layout": null,
+        "city": "West Coast"
+      },
+      {
+        "slug": "west-coast-2026-02-03-4175",
+        "framework": null,
+        "slide_layout": null,
+        "city": "West Coast"
+      }
+    ],
+    "impact": "framework at 16% coverage \u2014 comparisons have low confidence",
+    "blocking_fields": [
+      "framework",
+      "city"
+    ]
+  },
+  "missing_data": {
+    "addressable_gaps": [
+      {
+        "gap": "Competitive context",
+        "affects": "L1, L2, Synthesis",
+        "resolution": "Add competitor tracking via manual research or third-party tools"
+      },
+      {
+        "gap": "Classification metadata",
+        "affects": "L2, L3",
+        "resolution": "Backfill existing posts or capture during generate procedure (38/45 lack framework)"
+      },
+      {
+        "gap": "Content artifacts",
+        "affects": "L2, L3, L5",
+        "resolution": "Automate capture during generate and discover procedures (~37/45 lack copy.md)"
+      },
+      {
+        "gap": "posted_time",
+        "affects": "L4",
+        "resolution": "Add to Phase 2 collect or discover enrichment"
+      },
+      {
+        "gap": "Follower attribution",
+        "affects": "L3",
+        "resolution": "Capture fresh readings going forward to determine if backfill data is artifactual"
+      },
+      {
+        "gap": "Profile visits",
+        "affects": "L5",
+        "resolution": "Expand Phase 2 collect to capture profile_visits per post"
+      },
+      {
+        "gap": "Traffic source breakdown",
+        "affects": "L3",
+        "resolution": "Expand Phase 2 collect (only fyp_percent currently captured)"
+      },
+      {
+        "gap": "CTA heuristic accuracy",
+        "affects": "L5",
+        "resolution": "Populate carousel_details.cta_type and cta_text during generate procedure (currently keyword-matched from description)"
+      },
+      {
+        "gap": "sound_name / sound_type",
+        "affects": "L2",
+        "resolution": "Collect sound_name during enrichment, tag sound_type during production"
+      }
+    ],
+    "structural_gaps": [
+      {
+        "gap": "Creative judgment",
+        "affects": "L2, L3, L5, Synthesis",
+        "description": "Assessing hook appeal, caption authenticity, visual energy. Engine performs structured analysis and surfaces questions for human judgment."
+      }
+    ],
+    "stubbed_columns": [
+      {
+        "table": "posts",
+        "column": "posted_time",
+        "tier": 2,
+        "description": "Posting time of day"
+      },
+      {
+        "table": "posts",
+        "column": "sound_type",
+        "tier": 2,
+        "description": "Sound classification (trending/original/licensed)"
+      },
+      {
+        "table": "readings",
+        "column": "profile_visits",
+        "tier": 3,
+        "description": "Profile visits per post"
+      },
+      {
+        "table": "readings",
+        "column": "search_percent",
+        "tier": 3,
+        "description": "Traffic source: search"
+      },
+      {
+        "table": "readings",
+        "column": "profile_percent",
+        "tier": 3,
+        "description": "Traffic source: profile"
+      },
+      {
+        "table": "readings",
+        "column": "following_percent",
+        "tier": 3,
+        "description": "Traffic source: following"
+      },
+      {
+        "table": "readings",
+        "column": "other_percent",
+        "tier": 3,
+        "description": "Traffic source: other"
+      }
+    ],
+    "nexus_metadata_coverage": {
+      "framework": {
+        "filled": 7,
+        "total": 45,
+        "pct": 16
+      },
+      "slide_layout": {
+        "filled": 4,
+        "total": 45,
+        "pct": 9
+      },
+      "city": {
+        "filled": 29,
+        "total": 45,
+        "pct": 64
+      }
+    },
+    "account_checkpoints": 1,
+    "total_readings": 45,
+    "total_posts": 45
+  }
+}

@@ -1,0 +1,1 @@
+{"session_id": "fe-refactor-2026-02-03", "timestamp": "2026-02-03T12:00:00Z", "project": "nexusmvp", "instructions": ["Duplication is never acceptable - centralize unless industry standards specifically call for duplication", "Prefer industry standards and best practices as guiding principles", "Renamed docs/tmp/claude to docs/tmp/epics - epics persist outside Claude context"]}

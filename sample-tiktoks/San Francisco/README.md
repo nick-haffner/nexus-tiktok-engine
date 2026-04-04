@@ -1,4 +1,0 @@
-- **Views:** ~15k
-- **Framework:** Worth It
-- **Angle:** Worth It list
-- **Format:** Single-point (one recommendation per slide)

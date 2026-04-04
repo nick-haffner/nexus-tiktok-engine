@@ -1,0 +1,76 @@
+# Marketing Funnel Definition
+# Hierarchy: Stage > Channel > Campaign > Touchpoint
+# UTM mapping: channel.name > utm_source, campaign.name > utm_campaign,
+#              touchpoint.medium > utm_medium, touchpoint.content_variants > utm_content
+
+stages:
+
+  - order: 1
+    name: awareness
+    description: "First contact -- prospect discovers Nexus exists"
+    channels:
+
+      - name: tiktok
+        campaigns:
+          - name: waitlist_launch
+            touchpoints:
+              - name: Organic posts
+                description: "TikTok carousel and video content"
+                medium: organic_social
+              - name: Microinfluencer posts
+                description: "Partner-created TikTok content promoting Nexus"
+                medium: influencer
+                content_variants:
+                  - partner_001
+                  - partner_002
+                  - partner_003
+
+      - name: instagram
+        campaigns:
+          - name: waitlist_launch
+            touchpoints:
+              - name: Organic posts
+                description: "Instagram feed posts and reels"
+                medium: organic_social
+
+      - name: facebook
+        campaigns:
+          - name: waitlist_launch
+            touchpoints:
+              - name: Group posts
+                description: "Posts in relevant Facebook groups"
+                medium: organic_social
+
+      - name: reddit
+        campaigns:
+          - name: waitlist_launch
+            touchpoints:
+              - name: Posts
+                description: "Posts in relevant subreddits"
+                medium: organic_social
+
+  - order: 2
+    name: interest
+    description: "Prospect engages deeper -- interacts with Awareness content or receives direct outreach"
+    channels:
+
+      - name: tiktok
+        campaigns:
+          - name: waitlist_launch
+            touchpoints:
+              - name: DMs to followers
+                description: "Warm direct messages to followers who engaged with Awareness content"
+                medium: dm
+
+  - order: 3
+    name: consideration
+    description: "Prospect evaluates and converts -- joins the waitlist"
+    channels:
+
+      - name: website
+        campaigns:
+          - name: waitlist_launch
+            touchpoints:
+              - name: Waitlist landing page
+                description: "Landing page with email field and CTA driving waitlist signups"
+                medium: landing_page
