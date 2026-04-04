@@ -41,7 +41,7 @@ This queries the database, determines which posts need readings, and produces:
 Review the console output. It reports:
 - How many posts are due and their batch assignments
 - Whether an account checkpoint is due
-- Which posts need readings and their triage window type (velocity or snapshot)
+- Which posts need readings and their cadence tier (daily, weekly, mature, backfill)
 
 If zero posts are due and no account checkpoint is due, the procedure is complete. Stop here.
 
@@ -68,13 +68,13 @@ For each batch in the manifest:
 For each post in the current batch, run `collect_post`:
 
 ```
-python store/scripts/collect_post.py <post_id> --reading-type <snapshot|velocity>
+python store/scripts/collect_post.py <post_id>
 ```
 
 Execute the generated JavaScript on TikTok Studio. Parse the result:
 
 ```
-python store/scripts/collect_post.py <post_id> --reading-type <type> --parse '<json_result>'
+python store/scripts/collect_post.py <post_id> --parse '<json_result>'
 ```
 
 Write the parsed metrics to the corresponding row in `pending-capture.csv`. The CSV columns are:
@@ -87,7 +87,7 @@ fyp_percent, profile_visits,
 search_percent, profile_percent, following_percent, other_percent
 ```
 
-All readings capture all metrics regardless of type. The API returns all fields in a single call — the velocity/snapshot distinction controls *when* to capture (triage windows), not *what* to capture.
+All readings capture all metrics. The `type` field (`daily`, `weekly`, `mature`, `backfill`, `reading`) records which cadence tier triggered the capture — this controls *when* to read, not *what* to read.
 
 **3b. Validate the batch.**
 

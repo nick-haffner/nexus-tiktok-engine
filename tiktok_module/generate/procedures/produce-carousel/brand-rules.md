@@ -10,7 +10,7 @@ Every carousel must contain:
 
 1. **Hook Slide (Slide 1):** High-contrast title that stops the scroll. Use language appropriate to the chosen framework (e.g., "Local vs Tourist in [City] 🤩", "[City] spots that are actually worth it ✨", "[City]: Overrated vs Underrated").
 2. **Body Slides:** The number and layout depend on the chosen framework and format (see `../../data/strategy/frameworks.md`). Each slide should earn its place — if a category doesn't have a strong take, cut it. If the city has depth, go longer.
-3. **CTA Slide (Final Slide):** Nexus logo + closing text. Standard: "Travel like a local. Read more in the caption." Variations are acceptable (e.g., "Plan your next trip with Nexus").
+3. **CTA Slide (Final Slide, conditional):** Only present when a `--cta` argument was provided to `/produce-carousel`. Visually consistent with body slides — same text-on-photo treatment, no logo, no gradient overlay. See `../../store/data/strategy/cta-strategy.md` for CTA copy structure and conversion rules.
 
 ### Text Density Rule
 
@@ -38,4 +38,4 @@ There is no hard word count. The constraint is **visual legibility at render tim
 
 - **Hook Slide (Slide 1):** Include a subtle visual cue (small arrow pointing right) prompting the user to swipe.
 - **Body Slides:** Clean and editorial — no logo, no URL watermark.
-- **CTA Slide (Final Slide):** Render the URL in cyan (`#00E4DA`) with black outline instead of white. This is the only visual difference from body slides.
+- **CTA Slide (Final Slide, when present):** Same text-on-photo editorial treatment as body slides. No logo, no gradient overlay. The only permitted visual difference: render the URL (if present) in cyan (`#00E4DA`) with black outline instead of white.

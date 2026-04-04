@@ -99,7 +99,7 @@ CREATE TABLE readings (
     post_id                TEXT NOT NULL REFERENCES posts(post_id),
     captured_at            TEXT NOT NULL,   -- ISO 8601 with UTC offset (+00:00)
     hours_since_post       INTEGER NOT NULL,
-    type                   TEXT NOT NULL,   -- Window label: '48h', '7d', '30d', 'backfill', 'early', or 'reading' (on-demand)
+    type                   TEXT NOT NULL,   -- Cadence label: 'daily', 'weekly', 'mature', 'backfill', or 'reading' (on-demand). Legacy: '48h', '7d', '30d', 'early'.
     views                  INTEGER NOT NULL,
     likes                  INTEGER NOT NULL,
     comments               INTEGER NOT NULL,
@@ -142,7 +142,7 @@ The discover script implements this via `register_post` and `enrich_from_api`. S
 
 **Rule: insert always. Every observation is a new row.**
 
-The triage system prevents redundant readings by not surfacing posts that already have a reading within their current snapshot window. Account checkpoints use `captured_date` as PK — one per day, duplicates caught by IntegrityError.
+The triage system prevents redundant readings by not surfacing posts that already have a recent reading within their cadence tier (6h for hyper-early, 12h for daily, 7 days for weekly, once for mature). Account checkpoints use `captured_date` as PK — one per day, duplicates caught by IntegrityError.
 
 ## Timestamps
 
@@ -193,18 +193,22 @@ Capture reading is the only procedure that handles transient data — point-in-t
 
 After all four procedures have run for a post, every non-stub field is populated.
 
-## Reading Windows and Cadence
+## Reading Cadence
 
-All readings capture all metrics. The `type` field records which triage window triggered the capture — this controls *when* to read, not *what* to read.
+All readings capture all metrics. The `type` field records which cadence tier triggered the capture — this controls *when* to read, not *what* to read.
 
-| Type | Window (hours since post) | Purpose |
-|---|---|---|
-| `early` | < 168h, every 20h | Early trajectory tracking |
-| `48h` | 44-52 | Algorithm distribution decision |
-| `7d` | 164-196 | Canonical reading (90-95% of lifetime views) |
-| `30d` | 672-840 (conditional) | Only if 7d views > 10K. Second-wave distribution. |
-| `backfill` | >52h, no prior readings | Catch-up for posts registered after their windows passed |
-| `reading` | Any (on-demand) | User-requested via `/store-update for` |
+| Type | Post age | Cadence | Purpose |
+|---|---|---|---|
+| `daily` | 0–3 days (0–72h) | Every 6h | Algorithm actively testing. Growth curve steepest. |
+| `daily` | 3–7 days (72–168h) | Every 12h | Distribution settling. Daily check-in. |
+| `weekly` | 7–30 days (168–720h) | Every 7 days | Monitors for second-wave distribution. |
+| `mature` | 30 days (720h) | Once | Lifetime baseline capstone. |
+| `backfill` | Any age ≤30d, no prior readings | Once | Catch-up for posts registered after their active window passed. |
+| `reading` | Any (on-demand) | User-triggered | Requested via `/store-update for`. |
+
+Legacy type values (`early`, `48h`, `7d`, `30d`) may exist in readings captured before 2026-04-04. These are valid readings — the type label changed but the data is the same.
+
+A post's first reading is typically captured at 6–12h via `/store-update for` immediately after publishing. The daily triage cycle then picks it up on its next run.
 
 ## Connection Requirements
 

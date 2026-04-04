@@ -16,6 +16,10 @@ The `description` and `hashtags` fields in the `posts` table are populated once 
 
 Readings captured before the v2 migration (2026-04-01) store `captured_at` without a UTC offset suffix (e.g., `2026-04-01T07:16:04`). Post-v2 readings include `+00:00` (e.g., `2026-04-03T18:27:51+00:00`). Both are UTC. Both sort correctly as ISO 8601 strings. Analysis scripts handle both formats. No action required unless strict timezone parsing is introduced.
 
-## Backfill snapshot timing
+## Backfill reading timing
 
-Posts caught by the backfill branch of triage (older than 52 hours, zero readings) receive their snapshot at whatever age they happen to be when triage runs. A "48h snapshot" taken at 200 hours is less precisely timed than one taken at 48 hours, but the metrics are still valid. The `hours_since_post` field records the actual age at capture, so analysis can distinguish precisely-timed from late-captured snapshots.
+Posts caught by the backfill branch of triage (any age, zero readings) receive their first reading at whatever age they happen to be when triage runs. The `hours_since_post` field records the actual age at capture, so analysis can distinguish early-captured from late-captured readings.
+
+## Legacy reading type labels
+
+Readings captured before 2026-04-04 may have type values from the previous snapshot window system: `early`, `48h`, `7d`, `30d`, `snapshot`, `velocity`. These are valid readings. The cadence redesign (2026-04-04) replaced these with `daily`, `weekly`, `mature`, `backfill`, and `reading`. Analysis queries should handle both sets of labels.

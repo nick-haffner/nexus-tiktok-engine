@@ -49,13 +49,24 @@ Build a complete slide outline mapping out the full carousel.
 
 Present the outline clearly — list every slide with its planned content. Call out which items came from the manager vs. your research.
 
+## Step 0.4 — CTA Planning (Conditional)
+
+This step executes only when a `--cta` argument was provided to `/produce-carousel`. If CTA type is `none`, skip this step.
+
+1. Read `../../data/strategy/cta-strategy.md` for general CTA rules.
+2. If CTA type is `campaign`: also read the campaign file loaded during the SKILL.md pre-phase (e.g., `../../data/strategy/campaigns/waitlist.md`).
+3. Add a CTA slide to the end of the outline. Note the CTA type and, for campaign CTAs, the campaign-specific value prop direction.
+4. For `campaign` CTA type: consider the slide count guidance in cta-strategy.md (prefer 5-6 total slides). If the outline exceeds this, flag it to the manager as a tradeoff between content depth and conversion, but do not unilaterally cut slides.
+
+Include the CTA plan in the outline presented at the Manager Review Gate below.
+
 ## Manager Review Gate 0
 
 Present the complete slide outline to the manager.
 
-Tell the manager: *"Here is the full slide outline. Please review the concept, the pairings, and the slide count. Once you approve, I'll create the carousel directory and move to Phase 1 to write the exact slide text. Reply with 'Outline Approved. Proceed to Phase 1.' or let me know what to adjust."*
+Tell the manager: *"Here is the full slide outline. Please review the concept, the pairings, the slide count, and the CTA plan (if applicable). Once you approve, I'll create the carousel directory and move to Phase 1 to write the exact slide text. Reply with 'Outline Approved. Proceed to Phase 1.' or let me know what to adjust."*
 
-> **MANAGER ACTION:** Review the outline. Tweak locations, add/remove slides, or adjust the concept. Reply with **"Outline Approved. Proceed to Phase 1."**
+> **MANAGER ACTION:** Review the outline. Tweak locations, add/remove slides, adjust the concept, or modify the CTA plan. Reply with **"Outline Approved. Proceed to Phase 1."**
 
 Do not proceed to Phase 1 until the manager explicitly approves.
 

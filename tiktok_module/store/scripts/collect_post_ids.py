@@ -24,6 +24,7 @@ Exit codes:
 
 import csv
 import json
+import re
 import sys
 import os
 from datetime import datetime, timezone

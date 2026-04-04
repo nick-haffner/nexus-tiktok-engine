@@ -20,13 +20,9 @@ Data collection from TikTok Studio. Read metrics and write them to `pending-capt
 
 Access the TikTok Studio Content tab at `www.tiktok.com/tiktokstudio/content`. Authenticate if prompted.
 
-### Step 2 — Collect velocity metrics
+### Step 2 — Collect metrics
 
-For each row in `pending-capture.csv` where `type` is `velocity`: find the post in the Content tab by date and title. Access the post's detail page. Confirm the post ID in the page URL matches the `post_id` column in the CSV row. Read `views`, `likes`, `comments`, `shares`, and `bookmarks` from the detail page. Write these values to the corresponding columns in `pending-capture.csv`. Leave the remaining 4 columns blank.
-
-### Step 3 — Collect snapshot metrics
-
-For each row in `pending-capture.csv` where `type` is `snapshot`: find the post in the Content tab by date and title. Access the post's detail page. Confirm the post ID in the page URL matches the `post_id` column in the CSV row. Read all 9 metric values: `views`, `likes`, `comments`, `shares`, `bookmarks`, `new_followers`, `avg_watch_time_seconds`, `watched_full_percent`, `fyp_percent`. Write these values to the corresponding columns in `pending-capture.csv`.
+For each row in `pending-capture.csv`: collect all metrics for the post via the API (`collect_post.py`) or by navigating to the post's analytics page. All readings capture all metrics regardless of cadence tier — the `type` field (`daily`, `weekly`, `backfill`, `reading`) records *when* the reading was triggered, not *what* to collect. Write all metric values to the corresponding columns in `pending-capture.csv`.
 
 ### Step 4 — Account Checkpoint
 

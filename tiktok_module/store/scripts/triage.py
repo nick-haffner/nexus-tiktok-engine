@@ -54,41 +54,46 @@ def connect():
 
 
 def run_triage(conn):
+    """
+    Reading cadence (2026-04-04):
+      - 0-3 days (0-72h):    daily, every 6h   (algorithm actively testing)
+      - 3-7 days (72-168h):  daily, every 12h  (distribution settling)
+      - 7-30 days (168-720h): weekly, every 7d  (second-wave monitoring)
+      - 30 days (720h):      mature, once       (lifetime baseline capstone)
+      - 30+ days:            on-demand only     (via /store-update for)
+      - Any age <=30d, no readings: backfill
+    """
     return conn.execute("""
         SELECT
             p.post_id, n.slug, p.posted_date,
             CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) AS hours_old,
             CASE
-                WHEN CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) BETWEEN 44 AND 52
-                    AND NOT EXISTS (
-                        SELECT 1 FROM readings r2
-                        WHERE r2.post_id = p.post_id AND r2.hours_since_post BETWEEN 44 AND 52
-                    ) THEN '48h'
-                WHEN CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) BETWEEN 164 AND 196
-                    AND NOT EXISTS (
-                        SELECT 1 FROM readings r2
-                        WHERE r2.post_id = p.post_id AND r2.hours_since_post BETWEEN 164 AND 196
-                    ) THEN '7d'
-                WHEN CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) BETWEEN 672 AND 840
-                    AND EXISTS (
-                        SELECT 1 FROM readings r2
-                        WHERE r2.post_id = p.post_id AND r2.hours_since_post BETWEEN 164 AND 196 AND r2.views > 10000
-                    )
-                    AND NOT EXISTS (
-                        SELECT 1 FROM readings r3
-                        WHERE r3.post_id = p.post_id AND r3.hours_since_post BETWEEN 672 AND 840
-                    ) THEN '30d'
+                -- Backfill: any post <=30 days with zero readings
                 WHEN NOT EXISTS (
                         SELECT 1 FROM readings r4
                         WHERE r4.post_id = p.post_id
                     )
-                    AND CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) > 52
+                    AND CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) <= 720
                     THEN 'backfill'
-                WHEN CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) < 168
-                    AND (
-                        MAX(r.captured_at) IS NULL
-                        OR CAST((julianday('now') - julianday(MAX(r.captured_at))) * 24 AS INTEGER) >= 20
-                    ) THEN 'early'
+                -- Hyper-early: post is 0-3 days old, last reading was 6+ hours ago
+                WHEN CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) <= 72
+                    AND CAST((julianday('now') - julianday(MAX(r.captured_at))) * 24 AS INTEGER) >= 6
+                    THEN 'daily'
+                -- Daily: post is 3-7 days old, last reading was 12+ hours ago
+                WHEN CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) BETWEEN 73 AND 168
+                    AND CAST((julianday('now') - julianday(MAX(r.captured_at))) * 24 AS INTEGER) >= 12
+                    THEN 'daily'
+                -- Weekly: post is 7-30 days old, last reading was 7+ days ago
+                WHEN CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) BETWEEN 169 AND 720
+                    AND CAST((julianday('now') - julianday(MAX(r.captured_at))) * 24 AS INTEGER) >= 168
+                    THEN 'weekly'
+                -- Mature: post is 30+ days old, has no reading at or after 720h
+                WHEN CAST((julianday('now') - julianday(p.posted_date)) * 24 AS INTEGER) > 720
+                    AND NOT EXISTS (
+                        SELECT 1 FROM readings r5
+                        WHERE r5.post_id = p.post_id AND r5.hours_since_post >= 720
+                    )
+                    THEN 'mature'
                 ELSE NULL
             END AS action_needed
         FROM posts p

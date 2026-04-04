@@ -28,7 +28,8 @@
       "Bash(python3 _write_summaries.py)",
       "Bash(rm _write_summaries.py)",
       "Bash(/c/Python312/python _write_summaries.py)",
-      "Bash(/c/Python312/python.exe _write_summaries.py)"
+      "Bash(/c/Python312/python.exe _write_summaries.py)",
+      "Bash(rm:*)"
     ]
   }
 }

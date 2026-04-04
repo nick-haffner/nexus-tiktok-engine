@@ -127,7 +127,7 @@ def migrate_posts_table(conn):
             post_id                TEXT NOT NULL REFERENCES posts(post_id),
             captured_at            TEXT NOT NULL,
             hours_since_post       INTEGER NOT NULL,
-            type                   TEXT NOT NULL CHECK(type IN ('velocity', 'snapshot')),
+            type                   TEXT NOT NULL,  -- Cadence label: 'daily', 'weekly', 'mature', 'backfill', 'reading'. Legacy: '48h', '7d', '30d', 'early', 'snapshot', 'velocity'.
             views                  INTEGER NOT NULL,
             likes                  INTEGER NOT NULL,
             comments               INTEGER NOT NULL,

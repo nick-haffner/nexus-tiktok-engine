@@ -159,6 +159,14 @@ The split follows the data classification: permanent captured, transient, and pe
 
 `collect_post.py` is shared between discover and capture reading. The same API call returns both transient metrics (consumed by capture reading) and permanent metadata (consumed by discover via `enrich_from_api`). This avoids duplicate API calls — the orchestrating procedure (Claude) calls collect_post once and routes the fields to the appropriate consumer.
 
+### Reading Cadence Redesign (2026-04-04)
+
+The original triage used narrow snapshot windows (48h: 44–52h, 7d: 164–196h, 30d: 672–840h). With once-daily runs, these windows were too tight — a post had roughly a 33% chance of being inside the 8-hour 48h window when the daily cycle ran. Most posts missed their 48h and 7d readings entirely.
+
+Redesigned to age-based cadence: every 6h for the first 3 days (algorithm actively testing), every 12h for days 3–7 (distribution settling), weekly for days 7–30 (second-wave monitoring), a single mature reading at 30 days (lifetime baseline), then on-demand only. This guarantees ~12 readings in the hyper-early period and ~20+ total through day 30, instead of hoping to hit 2–3 narrow windows. Any downstream analysis that previously relied on a "48h reading" can query "reading closest to 48h" from the dense series — with more confidence, because neighboring data points exist for validation.
+
+The first reading at 6–12h (captured via `/store-update for` immediately after publishing) gives the earliest derivative of the growth curve, which the original schedule missed entirely.
+
 ## Known Edge Cases
 
 ### Caption/hashtag mutability

@@ -81,7 +81,9 @@
       "Bash(mkdir -p c:/Users/nickh/Repos/nexus-tiktok-engine/.claude/skills/store-update c:/Users/nickh/Repos/nexus-tiktok-engine/.claude/skills/store-backfill c:/Users/nickh/Repos/nexus-tiktok-engine/.claude/skills/store-repair)",
       "Edit(/.claude/skills/store-update/**)",
       "Edit(/.claude/skills/store-repair/**)",
-      "Edit(/.claude/skills/store-backfill/**)"
+      "Edit(/.claude/skills/store-backfill/**)",
+      "Bash(read dir:*)",
+      "Read(//tmp/**)"
     ],
     "additionalDirectories": [
       "C:\\Users\\nickh\\Repos\\nexus-tiktok-engine\\content-bank",

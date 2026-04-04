@@ -51,9 +51,16 @@ Write the body slide text for the approved outline. Adapt the structure to the c
 
 If you see an alternative angle or a stronger take for any body slide, call it out as an option rather than silently choosing one path.
 
-## Step 1.4 — The CTA Slide
+## Step 1.4 — The CTA Slide (Conditional)
 
-Write the closing slide text. The standard is: **"Travel like a local. Read more in the caption."** Variations are acceptable — match the energy of the carousel (e.g., "Plan your next trip with Nexus").
+This step executes only when a `--cta` argument was provided to `/produce-carousel`. If CTA type is `none`, skip this step — the carousel ends on the last body slide.
+
+Read `../../data/strategy/cta-strategy.md` for CTA copy structure and conversion rules. Write the CTA slide text according to the CTA type selected in Phase 0:
+
+- **`follow`:** Connect to the content the viewer just consumed. Tell them what they'll get by following. Keep it to 2-3 lines. No URL needed.
+- **`campaign`:** Read the campaign file loaded during the SKILL.md pre-phase (e.g., `../../data/strategy/campaigns/waitlist.md`). Write the CTA slide per the campaign's copy direction. Use "link in bio" as the primary action. URL as small reinforcing text only.
+
+The CTA slide must be visually consistent with body slides — same text-on-photo treatment. See `brand-rules.md` and `cta-strategy.md` for what NOT to do (no logos, no gradient overlays, no jarring layout changes).
 
 ## Step 1.5 — Renderability Check
 

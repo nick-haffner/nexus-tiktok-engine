@@ -38,13 +38,21 @@ The following documents what the script does internally. No action is required �
 
 Runs the triage query against the database. For each post published within the last 30 days, determines whether it needs a snapshot, velocity read, or nothing based on its age and existing readings. Also checks whether an account checkpoint is due (7+ days since last entry).
 
-### Snapshot Windows
+### Reading Cadence
 
-| Window | Hours since post | Rationale                                                                    |
-| ------ | ---------------- | ---------------------------------------------------------------------------- |
-| 48h    | 44–52            | First formal snapshot. Algorithm has made its initial distribution decision. |
-| 7d     | 164–196          | Canonical performance reading. 90–95% of lifetime views have arrived.        |
-| 30d    | 672–840          | Only if 7d snapshot views > 10K. Captures second-wave distribution.          |
+Readings are taken daily, with frequency determined by post age. This replaces the previous narrow snapshot windows (48h/7d/30d), which were too tight to reliably hit on a once-daily cycle.
+
+| Post age | Cadence | Type label | Rationale |
+|----------|---------|------------|-----------|
+| 0–3 days (0–72h) | Every 6h | `daily` | Algorithm is actively testing. Growth curve is steepest — captures acceleration, plateaus, and distribution pushes. |
+| 3–7 days (72–168h) | Every 12h | `daily` | Distribution settling. Daily check-in sufficient to track trajectory. |
+| 7–30 days (168–720h) | Every 7 days | `weekly` | Monitoring for second-wave distribution. Most posts have received 90–95% of lifetime views by day 7. |
+| 30 days (720h) | Once | `mature` | Lifetime baseline capstone. Establishes final performance for comparison against earlier readings. |
+| 30+ days | On-demand only | `reading` | Only collected when explicitly requested via `/store-update for`. |
+
+A post's first reading is typically captured at 6–12h via `/store-update for` (targeted mode) immediately after publishing. The daily cycle then picks it up on its next run.
+
+Posts registered after their active window (e.g., via backfill) receive a `backfill` reading on first triage. Posts older than 30 days that have never received a reading at or after the 720h mark are triaged as `mature`.
 
 ### CSV Generation
 
